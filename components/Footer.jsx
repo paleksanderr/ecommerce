@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <p>2022 Beat Headphones All rights reserved</p>
-      <p>
+      <p className="icons">
         <AiFillInstagram />
         <AiOutlineTwitter />
       </p>
