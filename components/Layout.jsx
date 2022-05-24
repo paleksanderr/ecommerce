@@ -1,27 +1,24 @@
-import React from 'react'
-import Head from 'next/head'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import React from "react";
+import Head from "next/head";
 
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
-const Layout = ( {children} ) => {
+const Layout = ({ children }) => {
   return (
-    <div className='layout'>
+    <div className="layout">
       <Head>
-        <title>Template Sklep</title>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <title>Template ecommerce</title>
       </Head>
       <header>
         <Navbar />
       </header>
-      <main className='main-container'>
-      {children}
-      </main>
+      <main className="main-container">{children}</main>
       <footer>
         <Footer />
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
